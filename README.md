@@ -7,6 +7,16 @@ This is the moment you start a painful, repetitive process... or you **code**!
 
 This project is the result of a non-patient programmer building a .NET 6 Console Application to do this job for him. Of course, that GitHub had to be used to make sure that nothing is refactored unduly.
 
+## Programming Technologies and Concepts Used
+### IDE
+Visual Studio
+### Language
+.NET 6
+### Design Patterns
+Chain of Responsability | Singleton
+### Others
+Regex | File Management
+
 ## **VBCodeCompliancer** Structure
 
 For each file that is read and refactored, the **VBCodeCompliancer** will create an object called **HandlingFile** will its content as a list of strings. Once the **VBCodeCompliancer** was built upon a _Chain Of Responsibility_ design pattern, you will see a list of _Handlers_ that will be called one by one where each one searches and refactors one specific item of the code in the current file (one _handler_ for methods names, other for parameters, other for local variables...).
